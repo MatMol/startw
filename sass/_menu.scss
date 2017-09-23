@@ -1,0 +1,62 @@
+@keyframes rotar{
+	to{
+		transform: rotate3d(1, 2, -1, 360deg);
+	}
+}
+
+.menu{
+	position: fixed;
+	z-index: 100;
+	overflow-y: auto;
+	width: 100%;
+	background: $color-fondo;
+	padding: 20px;
+	color: white;
+	font-family: $font-principal;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	.c1{
+		display: inline-block;
+
+		font-size: 50px;
+		color: $color-principal;
+
+		&:hover{
+			animation-name: rotar;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			color: white;
+		}
+	}
+
+	.contenedor{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	ul{
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		padding: 15px;
+	}
+
+	li a{
+		text-decoration: none;
+		margin: 0 5px;
+		color: white;
+
+		&:hover{
+			color: $color-principal;
+		}
+	}
+
+	button{
+		display: none;
+
+		background: $color-principal;
+		color: white;
+		border: 1px solid $color-principal;
+	}
+}

@@ -1,0 +1,46 @@
+.about{
+	background: $color-principal;
+	padding: 90px 0;
+	text-align: center;
+	color: white;
+
+	.section-title{
+	font-family: $font-principal;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-bottom: 20px;
+	}
+
+	article{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	p{
+		max-width: 400px;
+		padding: 10px 0;
+		text-align: left;
+		font-family: $font-secundaria;
+		font-size: 19px;
+	}
+
+	button{
+		margin-top: 30px;
+		font-family: $font-principal;
+		padding: 5px;
+		background: $color-fondo;
+		color: white;
+		border: 1px solid $color-fondo;
+		border-radius: 50px;
+		font-size: 15px;
+
+		&:hover{
+			background: white;
+			color: $color-fondo;
+			border: 1px solid white;
+		} 
+	}
+}

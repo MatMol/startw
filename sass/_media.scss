@@ -1,0 +1,43 @@
+@media (max-width: 560px){
+
+	.menu ul{
+		display: none;
+	}
+
+	.menu button{
+		display: inline-block;
+		position: relative;
+		right: 50px;
+	}
+}
+
+
+
+@media (max-width: 560px){
+	header img{
+		height: 100px;
+		width: 100px;
+	}
+
+	header h1{
+		font-size: 20px;
+	}
+
+	header h3{
+		font-size: 14px;
+	}
+
+	.about p{
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 414px){
+	.contact input{
+		max-width: 200px;
+	}
+
+	.contact textarea{
+		max-width: 200px;
+	}
+}

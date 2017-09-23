@@ -1,0 +1,13 @@
+@import "variables";
+@import "menu";
+@import "header";
+@import "portfolio";
+@import "about";
+@import "contact";
+@import "footer";
+@import "media";
+
+.contenedor{
+	max-width: 900px;
+	margin: auto;
+}

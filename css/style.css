@@ -1,0 +1,267 @@
+@keyframes rotar {
+  to {
+    transform: rotate3d(1, 2, -1, 360deg); } }
+.menu {
+  position: fixed;
+  z-index: 100;
+  overflow-y: auto;
+  width: 100%;
+  background: #2c3e50;
+  padding: 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
+  .menu .c1 {
+    display: inline-block;
+    font-size: 50px;
+    color: #18bc9c; }
+    .menu .c1:hover {
+      animation-name: rotar;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      color: white; }
+  .menu .contenedor {
+    display: flex;
+    justify-content: space-between; }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 15px; }
+  .menu li a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: white; }
+    .menu li a:hover {
+      color: #18bc9c; }
+  .menu button {
+    display: none;
+    background: #18bc9c;
+    color: white;
+    border: 1px solid #18bc9c; }
+
+header {
+  background: #18bc9c;
+  padding: 100px; }
+  header .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white; }
+  header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px; }
+  header h3 {
+    font-family: "Open-sans", sans-serif;
+    font-size: 28px;
+    text-transform: capitalize; }
+
+.portfolio {
+  padding: 50px 0; }
+  .portfolio .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+  .portfolio .section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center; }
+  .portfolio .galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .portfolio article {
+    width: 250px;
+    height: 150px;
+    margin: 25px 10px; }
+  .portfolio img {
+    width: 100%;
+    height: auto; }
+  .portfolio .overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 180px;
+    width: 250px;
+    opacity: 0;
+    transition: .5s ease;
+    background: #18bc9c;
+    text-align: center; }
+  .portfolio .art1 {
+    position: relative; }
+    .portfolio .art1:hover .overlay {
+      opacity: 1; }
+  .portfolio .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+
+.about {
+  background: #18bc9c;
+  padding: 90px 0;
+  text-align: center;
+  color: white; }
+  .about .section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20px; }
+  .about article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .about p {
+    max-width: 400px;
+    padding: 10px 0;
+    text-align: left;
+    font-family: "Open-sans", sans-serif;
+    font-size: 19px; }
+  .about button {
+    margin-top: 30px;
+    font-family: "Montserrat", sans-serif;
+    padding: 5px;
+    background: #2c3e50;
+    color: white;
+    border: 1px solid #2c3e50;
+    border-radius: 50px;
+    font-size: 15px; }
+    .about button:hover {
+      background: white;
+      color: #2c3e50;
+      border: 1px solid white; }
+
+.contact {
+  padding: 90px 0;
+  text-align: center;
+  display: flex; }
+  .contact .section-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .contact form {
+    display: flex;
+    flex-direction: column; }
+    .contact form input {
+      height: 30px;
+      width: 400px;
+      margin: 5px; }
+    .contact form textarea {
+      height: 80px;
+      width: 400px;
+      margin: 5px; }
+    .contact form button {
+      padding: 10px;
+      max-width: 60px;
+      background: #2c3e50;
+      border: 1px solid #2c3e50;
+      color: white;
+      font-family: "Montserrat", sans-serif; }
+      .contact form button:hover {
+        background: #18bc9c;
+        color: white;
+        border: 1px solid white; }
+
+footer {
+  background: #2c3e50;
+  padding: 45px 0;
+  color: white; }
+  footer h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-radius: 50%; }
+  footer h4 {
+    font-family: "Open-sans", sans-serif;
+    font-size: 17px; }
+  footer .foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap; }
+    footer .foot article {
+      flex: 1;
+      margin: 0 10px 40px 10px; }
+    footer .foot p {
+      font-family: "Open-sans", sans-serif;
+      font-size: 17px; }
+    footer .foot a {
+      text-decoration: none;
+      color: #18bc9c;
+      font-family: "Open-sans", sans-serif;
+      font-size: 17px; }
+  footer .copy {
+    display: flex;
+    justify-content: center; }
+  footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    footer .social a {
+      font-size: 30px;
+      color: white;
+      text-decoration: none; }
+    footer .social span {
+      border: 2px solid white;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 5px; }
+      footer .social span:hover {
+        background: white;
+        color: #18bc9c; }
+
+@media (max-width: 560px) {
+  .menu ul {
+    display: none; }
+
+  .menu button {
+    display: inline-block;
+    position: relative;
+    right: 50px; } }
+@media (max-width: 560px) {
+  header img {
+    height: 100px;
+    width: 100px; }
+
+  header h1 {
+    font-size: 20px; }
+
+  header h3 {
+    font-size: 14px; }
+
+  .about p {
+    font-size: 17px; } }
+@media (max-width: 414px) {
+  .contact input {
+    max-width: 200px; }
+
+  .contact textarea {
+    max-width: 200px; } }
+.contenedor {
+  max-width: 900px;
+  margin: auto; }
+
+/*# sourceMappingURL=style.css.map */

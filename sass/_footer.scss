@@ -1,0 +1,78 @@
+footer{
+	background: $color-fondo;
+	padding: 45px 0;
+	color: white;
+
+	h3{
+		font-family: $font-principal;
+		font-size: 27px;
+		text-transform: uppercase;
+		font-weight: 700;
+		padding-bottom: 20px;
+		border-radius: 50%;
+	}
+
+	h4{
+		font-family: $font-secundaria;
+		font-size: 17px;
+	}
+
+	.foot{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+
+		article{
+			flex: 1;
+			margin: 0 10px 40px 10px;
+		}
+
+		p{
+			font-family: $font-secundaria;
+			font-size: 17px;
+		} 
+
+		a{
+			text-decoration: none;
+			color: $color-principal;
+			font-family: $font-secundaria;
+			font-size: 17px;
+		}
+	}
+
+	.copy{
+		display: flex;
+		justify-content: center;
+	}
+
+	.social{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		a{
+			font-size: 30px;
+			color: white;
+			text-decoration: none;
+		}
+
+		span{
+			border: 2px solid white;
+			border-radius: 50%;
+			height: 40px;
+			width: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0 5px;
+
+			&:hover{
+				background: white;
+				color: $color-principal;
+			}
+		}
+	}
+
+}

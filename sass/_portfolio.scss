@@ -1,0 +1,68 @@
+.portfolio{
+	padding: 50px 0;
+
+	.contenedor{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.section-title{
+		font-family: $font-principal;
+		font-size: 50px;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.galeria{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	article{
+		width: 250px;
+		height: 150px;
+		margin: 25px 10px;
+	}
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	.overlay{
+		position: absolute;
+		top: 0px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 180px;
+		width: 250px;
+		opacity: 0;
+		transition: .5s ease;
+		background: $color-principal;
+		text-align: center;
+	}
+
+	.art1{
+		position: relative;
+
+		&:hover .overlay{
+			opacity: 1;
+		}
+	}
+
+	.text{
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+
+}

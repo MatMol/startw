@@ -1,0 +1,44 @@
+.contact{
+	padding: 90px 0;
+	text-align: center;
+	display: flex;
+
+	.section-title{
+	font-family: $font-principal;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: 700;
+	}
+
+	form{
+		display: flex;
+		flex-direction: column;
+
+		input{
+			height: 30px;
+			width: 400px;
+			margin: 5px;
+		}
+
+		textarea{
+			height: 80px;
+			width: 400px;
+			margin: 5px;
+		}
+
+		button{
+			padding: 10px;
+			max-width: 60px;
+			background: $color-fondo;
+			border: 1px solid $color-fondo;
+			color: white;
+			font-family: $font-principal;
+
+			&:hover{
+			background: $color-principal;
+			color: white;
+			border: 1px solid white;
+			}
+		}
+	}
+}
